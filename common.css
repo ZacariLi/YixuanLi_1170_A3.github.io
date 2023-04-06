@@ -1,0 +1,163 @@
+    /* Navigation structure */
+    header {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ol {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li {
+        margin: 0 20px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Images */
+    img {
+        border: 2px solid black;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    /* URLs */
+    a:visited {
+        color: purple;
+    }
+
+    /* Lists */
+    ul {
+        list-style-type: square;
+        margin-left: 20px;
+    }
+
+    ol {
+        list-style-type: decimal;
+        margin-left: 20px;
+    }
+
+    /* Table */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th,
+    td {
+        text-align: left;
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #333;
+        color: white;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+       
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+        body {
+            background-color: red;
+        }
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+        body {
+            background-color: yellow;
+        }
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+        body {
+            background-color: blue;
+        }
+    }
+      
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+        body {
+            background-color: green;
+        }
+    }
+      
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+        body {
+            background-color: white;
+        }
+    }
+    ul#album, #album li{
+        margin:0;
+        padding:0;
+        list-style:none;
+      }
+      ul#album{
+        width:600px;
+        height:400px;
+        position:relative;
+      }
+      #album li{
+        float:left;
+        width:150px;
+        height:100px;
+       overflow: hidden;
+      }
+      #album li img{
+        width:150px;
+        height:100px;
+      }
+      #album li:hover span img{
+        display: block;
+        position: absolute;
+        top:100px;
+        left: 150px;
+        width: 300px;
+        height: 200px;
+      }
+      #album li.left {
+        float:left;
+        clear:left;
+      }
+      #album li.right {
+        float:right;
+        clear:right;
+      }
+      #album li.fixbug {
+        width:200px;
+        height:150px;
+      }
+      #album .first img{
+        display: block;
+        position: absolute;
+        top:100px;
+        left: 150px;
+        width: 300px;
+        height: 200px;
+      }

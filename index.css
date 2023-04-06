@@ -1,0 +1,134 @@
+/* Additional CSS */
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 20px;
+}
+
+input {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+label {
+    margin: 10px;
+}
+
+button {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
+}
+
+/* Flexboxes */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+.grid-item {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Selectors */
+/* Universal selector */
+* {
+    color: black;
+}
+
+/* Multiple selector */
+h1, h2 {
+    text-align: center;
+}
+
+/* Child selector */
+nav > ol {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Sibling selector */
+label + input {
+    margin: 5px;
+}
+
+/* Adjacent sibling selector */
+img + br {
+    display: none;
+}
+
+/* Attribute selector */
+img[alt="My goal picture"] {
+    border: 2px solid red;
+}
+
+/* Pseudo-element selector */
+footer::before {
+    content: "Copyright ";
+}
+
+header .showTime {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  line-height: 0.9375rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+    }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+    body {
+        background-color: blue;
+    }
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    body {
+        background-color: green;
+    }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    body {
+        background-color: white;
+    }
+}
